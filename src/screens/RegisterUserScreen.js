@@ -1,12 +1,12 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import { Col, Form, Button, Row } from "react-bootstrap";
 import { UsersContext } from "../contexts/UsersContext";
-import { useHistory, useLocation } from "react-router-dom";
+// import { useHistory, useLocation } from "react-router-dom";
 const RegisterUserScreen = () => {
-  const location = useLocation();
-  const history = useHistory();
+  // const location = useLocation();
+  // const history = useHistory();
 
-  const { registerUser, userInfo } = useContext(UsersContext);
+  const { registerUser } = useContext(UsersContext);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

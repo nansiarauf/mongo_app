@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Form, Container, Button } from "react-bootstrap";
 
 const AddClient = () => {
@@ -17,7 +16,9 @@ const AddClient = () => {
         <Form.Control placeholder="Enter destination"></Form.Control>
         <Form.Label>Phone</Form.Label>
         <Form.Control placeholder="(233) xx-xxxxxxx"></Form.Control>
-        <Button className="btn btn-success mt-2" type="submit">ADD</Button>
+        <Button className="btn btn-success mt-2" type="submit">
+          ADD
+        </Button>
       </Form>
     </Container>
   );
