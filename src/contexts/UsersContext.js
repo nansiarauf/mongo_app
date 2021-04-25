@@ -59,11 +59,11 @@ const UserContextProvider = ({ children }) => {
     }
   }
   //LOGOUT
-  const LogOut = () => {
-    dispatch({
-      type: "LOGOUT",
-    });
-  };
+  // const LogOut = () => {
+  //   dispatch({
+  //     type: "LOGOUT",
+  //   });
+  // };
   return (
     <UsersContext.Provider
       value={{
