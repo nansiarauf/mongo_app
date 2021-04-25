@@ -7,6 +7,7 @@ const Clients = () => {
   const { loading, clients, getClients } = useContext(ClientsContext);
   useEffect(() => {
     getClients();
+    // eslint-disable-next-line
   }, []);
   return (
     <section>
