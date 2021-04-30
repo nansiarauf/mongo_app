@@ -20,4 +20,8 @@
 }
 .nav-item {
   color: white;
+  margin: 5px;
+}
+.main-header {
+  margin: 10px;
 }

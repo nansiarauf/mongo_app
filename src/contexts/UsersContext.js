@@ -11,6 +11,7 @@ const initialData = {
 export const UsersContext = createContext();
 const UserContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(usersReducer, initialData);
+  // const [token, setToken] = useState("");
 
   //LOGIN USER
   async function LoginUser(user) {
@@ -18,6 +19,7 @@ const UserContextProvider = ({ children }) => {
       const config = {
         headers: {
           "Content-Type": "application/json",
+          authorization: localStorage.getItem("userInfo"),
         },
       };
       const res = await axios.post(

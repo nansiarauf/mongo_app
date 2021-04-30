@@ -18,8 +18,8 @@ const Clients = () => {
             <tr>
               <th>NAME</th>
               <th>AGE</th>
-              <th>DOB</th>
               <th>EMAIL</th>
+              <th>DOB</th>
               <th>DESTINATION</th>
               <th>PHONE</th>
               <th>EDIT</th>
